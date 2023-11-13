@@ -1,0 +1,62 @@
+body{
+    color:#ffff;
+    background-color: #3aafab;
+    font: normal 18px 'Fira Sans',"Helvetica Neue", sans-serief;
+}
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 10px auto ;
+}
+.container *{
+    box-sizing: border-box;
+}
+.flex-outer, .flex-inner{
+    list-style-type: none;
+    padding: 0;
+}
+.flex-outer{
+    max-width: 800px;   
+    margin: 0 auto;    
+}
+.flex-outer li, .flex-inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-outer > li:not(:last-child){
+    margin-bottom: 20px;
+}
+.flex-inner{
+    padding: 0 8px;
+    justify-content: space-evenly;
+}
+
+.flex-outer li label, li p{
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    padding: 8px;
+    font-weight: 300;
+}
+.flex-outer > li > label, li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+.flex-outer > li > label + *, .flex-inner{
+    flex: 1 0 220px;
+}
+.flex-outer li input:not([type='checkbox']), .flex-outer li textarea{
+    padding: 15px;
+    border:none;
+}
+.flex-outer li button {
+    background-color: #333;
+    color: #ffff;
+    margin:auto;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    border-radius: 3.5px;
+    letter-spacing: 0.09em;
+}
+    
